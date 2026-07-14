@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital CMS Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand"><div class="brand-mark">+</div><span>Hospital CMS</span></div>
+        <nav><a href="index.html">Home</a><a href="appointments.html">Appointments</a><a href="login.html">Logout</a></nav>
+    </header>
+
+    <main class="hero dashboard-shell">
+        <section class="search-bar">
+            <input type="search" placeholder="Search Bar for custom output">
+            <div class="filters">
+                <select><option>PM</option><option>AM</option></select>
+                <select><option>Filter by Specialty</option><option>Cardiologist</option><option>Neurologist</option><option>Dermatologist</option></select>
+            </div>
+        </section>
+
+        <section class="grid cards">
+            <article class="card"><h2>Dr. Emily Adams</h2><p>Specialization: Cardiologist</p><p>Email: dr.adams@example.com</p><p>Available: 09:00-10:00, 10:00-11:00, 11:00-12:00, 14:00-15:00</p><button class="btn dark">Book Now</button></article>
+            <article class="card"><h2>Dr. Mark Johnson</h2><p>Specialization: Neurologist</p><p>Email: dr.johnson@example.com</p><p>Available: 10:00-11:00, 11:00-12:00, 14:00-15:00, 15:00-16:00</p><button class="btn dark">Book Now</button></article>
+            <article class="card"><h2>Dr. Sarah Lee</h2><p>Specialization: Orthopedist</p><p>Email: dr.lee@example.com</p><p>Available: 09:00-10:00, 11:00-12:00, 14:00-15:00, 16:00-17:00</p><button class="btn dark">Book Now</button></article>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Doctor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand"><div class="brand-mark">+</div><span>Hospital CMS</span></div>
+        <nav><a href="index.html">Home</a><a href="patient-login.html">Logout</a></nav>
+    </header>
+    <main class="hero">
+        <section class="dashboard-shell wide-layout">
+            <section class="search-bar search-card">
+                <input type="search" value="Dr. Emily Adams" placeholder="Search doctor by name">
+                <div class="filters">
+                    <select><option>Cardiologist</option><option>Neurologist</option><option>Dermatologist</option></select>
+                    <select><option>Any Time</option><option>Morning</option><option>Afternoon</option></select>
+                </div>
+            </section>
+
+            <section class="grid cards">
+                <article class="card highlight">
+                    <h2>Dr. Emily Adams</h2>
+                    <p>Specialization: Cardiologist</p>
+                    <p>Email: dr.adams@example.com</p>
+                    <p>Available: 09:00-10:00, 10:00-11:00</p>
+                    <button class="btn dark" type="button">Book Now</button>
+                </article>
+                <article class="card">
+                    <h2>Dr. Mark Johnson</h2>
+                    <p>Specialization: Neurologist</p>
+                    <p>Email: dr.johnson@example.com</p>
+                    <p>Available: 11:00-12:00, 15:00-16:00</p>
+                    <button class="btn dark" type="button">Book Now</button>
+                </article>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

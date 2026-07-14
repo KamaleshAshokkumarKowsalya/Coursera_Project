@@ -1,0 +1,4 @@
+backend/target/
+frontend/.cache/
+*.log
+.DS_Store

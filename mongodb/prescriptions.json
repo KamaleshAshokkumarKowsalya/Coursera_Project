@@ -1,0 +1,10 @@
+[
+  {
+    "patientId": 1,
+    "doctorId": 1,
+    "medicineNames": ["Vitamin C tablets"],
+    "dosageInstructions": "Twice a day",
+    "additionalNotes": "NA",
+    "createdAt": "2025-05-23T10:30:00"
+  }
+]
