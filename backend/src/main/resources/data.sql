@@ -12,7 +12,7 @@ INSERT INTO doctor_available_times (doctor_id, available_time) VALUES
 (3, '09:00'),
 (3, '14:00');
 
-INSERT INTO patients (id, full_name, email, gender, date_of_birth) VALUES
+INSERT INTO patients (id, full_name, email, phone_number, gender, date_of_birth) VALUES
 (1, 'John Smith', 'john.smith@example.com', '555-2001', 'Male', '1990-04-12'),
 (2, 'Ava Green', 'ava.green@example.com', '555-2002', 'Female', '1988-09-22'),
 (3, 'Noah Brown', 'noah.brown@example.com', '555-2003', 'Male', '1992-12-15'),

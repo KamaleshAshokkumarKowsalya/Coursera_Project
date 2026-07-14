@@ -4,14 +4,23 @@ server:
 spring:
   application:
     name: smart-clinic-backend
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
   sql:
     init:
       mode: always
+      
+
   datasource:
     url: jdbc:h2:mem:smartclinic;MODE=MySQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     driver-class-name: org.h2.Driver
     username: sa
     password:
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -20,6 +29,7 @@ spring:
         dialect: org.hibernate.dialect.H2Dialect
     open-in-view: false
     defer-datasource-initialization: true
+
   data:
     mongodb:
       uri: mongodb://localhost:27017/smartclinic

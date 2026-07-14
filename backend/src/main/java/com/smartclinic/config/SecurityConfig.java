@@ -12,12 +12,15 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
     @Bean
-    SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf(csrf -> csrf.disable())
-                .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/", "/index.html", "/assets/**", "/api/health").permitAll()
-                        .anyRequest().permitAll())
-                .httpBasic(Customizer.withDefaults());
-        return http.build();
-    }
+SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    http
+        .csrf(csrf -> csrf.disable())
+        .headers(headers -> headers.frameOptions(frame -> frame.disable()))
+        .authorizeHttpRequests(auth -> auth
+            .requestMatchers("/h2-console/**").permitAll()
+            .requestMatchers("/", "/index.html", "/assets/**", "/api/health").permitAll()
+            .anyRequest().permitAll());
+
+    return http.build();
+}
 }
